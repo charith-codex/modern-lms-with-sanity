@@ -1,3 +1,10 @@
+import Hero from '@/components/Hero';
+
 export default function Home() {
-  return <>hello, NextEra</>;
+  return (
+    <div className="min-h-screen bg-background">
+      <Hero />
+      hello, NextEra
+    </div>
+  );
 }
