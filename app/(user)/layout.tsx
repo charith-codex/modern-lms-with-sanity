@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { ClerkProvider } from '@clerk/nextjs';
 import Header from '@/components/Header';
+import { SanityLive } from '@/sanity/lib/live';
 
 export const metadata: Metadata = {
   title: 'Modern LMS',
@@ -15,8 +16,10 @@ export default function UserLayout({
   return (
     <ClerkProvider>
       <div className="min-h-screen flex flex-col">
-        <Header/>
+        <Header />
         <main className="flex-1">{children}</main>
+
+        <SanityLive />
       </div>
     </ClerkProvider>
   );
