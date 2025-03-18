@@ -5,18 +5,18 @@ import Link from 'next/link';
 import { BookOpen } from 'lucide-react';
 import { urlFor } from '@/sanity/lib/image';
 import { Loader } from '@/components/Loader';
-// import { CourseProgress } from '@/components/CourseProgress';
+import { CourseProgress } from '@/components/CourseProgress';
 import {
   GetCoursesQueryResult,
-  // GetEnrolledCoursesQueryResult,
+  GetEnrolledCoursesQueryResult,
 } from '@/sanity.types';
 
 interface CourseCardProps {
   course:
     | GetCoursesQueryResult[number]
-    // | NonNullable<
-    //     NonNullable<GetEnrolledCoursesQueryResult>['enrolledCourses'][number]['course']
-    //   >;
+    | NonNullable<
+        NonNullable<GetEnrolledCoursesQueryResult>['enrolledCourses'][number]['course']
+      >;
   progress?: number;
   href: string;
 }
@@ -45,7 +45,7 @@ export function CourseCard({ course, progress, href }: CourseCardProps) {
           <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-60 group-hover:opacity-80 transition-opacity duration-300" />
           <div className="absolute bottom-4 left-4 right-4 flex items-center justify-between">
             <span className="text-sm font-medium px-3 py-1 bg-black/50 text-white rounded-full backdrop-blur-sm">
-              {course.category?.name || 'Uncategorized'}
+              {course.category?.name || 'UnCategorized'}
             </span>
             {'price' in course && typeof course.price === 'number' && (
               <span className="text-white font-bold px-3 py-1 bg-black/50 dark:bg-white/20 rounded-full backdrop-blur-sm">
@@ -90,14 +90,14 @@ export function CourseCard({ course, progress, href }: CourseCardProps) {
                 <BookOpen className="h-4 w-4 text-muted-foreground" />
               </div>
             )}
-            {/* {typeof progress === 'number' && (
+            {typeof progress === 'number' && (
               <CourseProgress
                 progress={progress}
                 variant="default"
                 size="sm"
                 label="Course Progress"
               />
-            )} */}
+            )}
           </div>
         </div>
       </div>
