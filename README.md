@@ -1,36 +1,30 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Modern Learning Management System (LMS)
 
-## Getting Started
+![image](https://github.com/user-attachments/assets/6854c577-5ad4-4e54-8595-a58227fbbe6d)
 
-First, run the development server:
+![image](https://github.com/user-attachments/assets/0c5b8f48-0dd8-4da4-be15-6daa8c3e2efd)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+![image](https://github.com/user-attachments/assets/55d8dd6c-f80a-4437-a990-ea11c1560be5)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## About the Project
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+This project is a modern Learning Management System (LMS) developed by following the [YouTube tutorial](https://www.youtube.com/watch?v=17VzlB35Ixw) by Sonny Sangha. The LMS provides a platform for educators to create and manage courses, and for students to enroll and engage with course content.
 
-## Learn More
+## Features
 
-To learn more about Next.js, take a look at the following resources:
+- **Course Management**: Create, update, and delete courses with ease.
+- **User Authentication**: Secure login and registration for instructors and students.
+- **Responsive Design**: Optimized for various devices, ensuring a seamless user experience.
+- **Admin Dashboard**: Comprehensive dashboard for administrators to oversee platform activities.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Tech Stack
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Frontend**: Next.js 15, shardcn
+- **Backend**: Sanity
+- **Payment Processing**: Stripe
+- **Authentication**: Clerk
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
