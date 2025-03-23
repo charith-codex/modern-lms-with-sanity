@@ -1,0 +1,42 @@
+pnpm dev
+
+36.00
+56.50
+1.15.00
+1.22.00
+pnpm typegen
+npm install -g @sanity/cli
+2.15.15
+
+pnpm i groq
+pnpm i @sanity/client
+pnpm typegen
+
+2.49.00 - search option
+sanity manage
+error come***** search not work
+
+3.02.55 - course content display page
+
+3.24.10 - stripe setup
+pnpm i stripe
+stripe login
+
+3.50.00 - setup stripe webhooks
+stripe listen --forward-to localhost:3000/api/stripe/webhook
+# when before payment need to run above code in terminal then payment do(otherwise course enroll not work)
+
+4.07.00 - setup my-courses page
+
+4.21.50 - setup course dashboard
+pnpm dlx shadcn@latest add tooltip
+pnpm dlx shadcn@latest add accordion
+pnpm dlx shadcn@latest add skeleton
+pnpm dlx shadcn@latest add scroll-area
+pnpm i -D @tailwindcss/typography
+pnpm i react-player
+
+5.25.00 - add sanity presentation tool # not work
+pnpm i @sanity/preview-url-secret
+
+5.46.00 - deploy
